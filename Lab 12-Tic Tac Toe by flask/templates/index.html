@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe — AI Lab 12</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <main class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <section class="board" id="gameBoard" aria-label="Tic Tac Toe board">
+      {% for i in range(9) %}
+        <div
+          class="cell"
+          role="button"
+          tabindex="0"
+          onclick="makeMove(this)"
+          onkeydown="handleKey(event, this)"
+          aria-label="Cell {{ i+1 }}"
+        ></div>
+      {% endfor %}
+    </section>
+
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <div class="actions">
+      <button type="button" onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <footer class="hint">
+      Two-player game: <b>X</b> and <b>O</b>.
+      <span class="kbd">Tip:</span> Use <b>Enter</b> or <b>Space</b> to play on a focused cell.
+    </footer>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
