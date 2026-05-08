@@ -19,7 +19,7 @@ Then open:
 
 ## Project Structure
 ```text
-Artificial-Intelligence-Rasikh-Ali/
+Artificial-Intelligence/
 ├── app.py
 ├── requirements.txt
 ├── templates/
