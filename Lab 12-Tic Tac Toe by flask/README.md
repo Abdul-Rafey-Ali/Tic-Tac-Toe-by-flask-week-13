@@ -1,4 +1,4 @@
-# Artificial-Intelligence-Rasikh-Ali (AI Lab 12 — Flask Introduction)
+(AI Lab 12 — Flask Introduction)
 
 This project implements the **AI Lab 12** Flask introduction using a **web-based Tic Tac Toe** game.
 
